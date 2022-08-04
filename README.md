@@ -7,7 +7,7 @@ Créé à l'aide des technologies suivantes :
 - [jQuery](https://jquery.com/ "jQuery is a fast, small, and feature-rich JavaScript library.")
 - [Bulma](https://bulma.io/ "Bulma: the modern CSS framework that just works.")
 
-Utilisez le legendaire Konami code (⬆️ ⬆️ ⬇️ ⬇️ ⬅️ ➡️ ⬅️ ➡️ 🅱️ 🅰️) pour passer en Dark Mode
+~~Utilisez le legendaire Konami code (⬆️ ⬆️ ⬇️ ⬇️ ⬅️ ➡️ ⬅️ ➡️ 🅱️ 🅰️) pour passer en Dark Mode~~
 
 Vous pouvez avoir un aperçu du fonctionnement du site en cliquant **[ICI](https://flabby-owl.github.io/ro_roster_creator/ "Aperçu du site")**
 
