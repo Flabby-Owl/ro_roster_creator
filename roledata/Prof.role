@@ -1,0 +1,5 @@
+<option value="" disabled="disabled" selected="selected">Selectionnez un Role</option>
+<option value="OLP">Offensive Land Protector</option>
+<option value="DLP">Defensive Land Protector</option>
+<option value="Dispellr">Dispell</option>
+<option value="Mind Breaker">Mind Breaker</option>

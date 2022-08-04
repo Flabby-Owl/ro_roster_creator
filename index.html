@@ -1,0 +1,324 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>RO Roster Configurator</title>
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" media="screen" href="css/bulma.css" type="text/css">
+    <link rel="stylesheet" media="screen" href="css/theme.css" type="text/css">
+    <link rel="stylesheet" media="screen" href="css/icofont.css" type="text/css">
+</head>
+
+<body>
+    <header class="hero has-background-facebook-blue has-text-centered">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <img class="image" src="img/logo.png">
+                    </div>
+                    <div class="column">
+                        <p class="title has-text-white is-size-4-mobile title-ubuntu">L'outil INDISPENSABLE</p>
+                        <p class="subtitle has-text-white is-size-5-mobile">Pour creer les groupes de WoE facilement et rapidement</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header class="hero is-light">
+        <div class="hero-body">
+            <div class="columns is-mobile">
+                <div class="column has-text-left">
+                    <a class="button is-facebook is-medium has-text-white" id="CreateLink"><i class="icofont icofont-page"></i>Afficher les Caracteristiques</a>
+
+                </div>
+
+                <div class="column has-text-centered" id="notifyZone">
+                    <!--Notifications-->
+
+
+                    <div class="notification is-success hidden" id="notifySuccessGroupA">
+                        <p class="subtitle has-text-white"><i class="icofont icofont-verification-check"></i> Le guildien a bien été ajouté au <strong>Groupe A</strong></p>
+
+                    </div>
+
+                    <div class="notification is-success hidden" id="notifySuccessGroupB">
+                        <p class="subtitle has-text-white"><i class="icofont icofont-verification-check"></i> Le guildien a bien été ajouté au <strong>Groupe B</strong></p>
+
+                    </div>
+
+                    <div class="notification is-success hidden" id="notifySuccessGroupC">
+                        <p class="subtitle has-text-white"><i class="icofont icofont-verification-check"></i> Le guildien a bien été ajouté au <strong>Groupe C</strong></p>
+
+                    </div>
+
+                    <div class="notification is-success hidden" id="notifySuccessGroupD">
+                        <p class="subtitle has-text-white"><i class="icofont icofont-verification-check"></i> Le guildien a bien été ajouté au <strong>Groupe D</strong></p>
+
+                    </div>
+
+                    <div class="notification is-warning" id="notifyWarning">
+                        <p class="subtitle"><i class="icofont icofont-exclamation-tringle"></i> Pensez a <strong>BIEN</strong> verifier les informations a ajouter aux tableaux <strong>AVANT</strong> de cliquer sur 'Ajouter aux tableaux', rien n'est enregistré et le seul moyen de corriger une erreur est d'actualiser la page et de reccomencer depuis le depart.</p>
+
+                    </div>
+                </div>
+
+                <div class="column has-text-right">
+                    <a class="button is-facebook is-medium has-text-white" id="TabLink">Afficher les groupes<i class="icofont icofont-group"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Section du Roster Creator-->
+
+
+
+    <section id="RosterCreator">
+        <div class="columns">
+            <div class="column has-text-centered">
+                <p class="title is-size-4-mobile title-ubuntu"><i class="icofont icofont-verification-check has-text-success" id="Stage1"></i>Etape 1</p>
+                <p class="subtitle is-size-5-mobile">Choisissez dans quel groupe sera affecté le guildien</p>
+                <form name="Group" id="Group">
+                    <div class="select is-medium">
+                        <select id="selectGrp">
+                            <option value="none" disabled="disabled" selected="selected">Selectionnez le Groupe</option>
+                            <option value="GrpGroupA">Groupe A</option>
+                            <option value="GrpGroupB">Groupe B</option>
+                            <option value="GrpGroupC">Groupe C</option>
+                            <option value="GrpGroupD">Groupe D</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+
+            <div class="column has-text-centered">
+                <p class="title is-size-4-mobile title-ubuntu"><i class="icofont icofont-verification-check has-text-success" id="Stage2"></i>Etape 2</p>
+                <p class="subtitle is-size-5-mobile">Definissez sa classe et son role pendant la WoE</p>
+                <div class="columns">
+                    <div class="column">
+                        <form name="Class" id="Class">
+                            <div class="select is-medium">
+                                <select id="selectClass" name="selectClass" disabled>
+                                    <option value="none" disabled="disabled" selected="selected">Selectionnez la Classe</option>
+                                    <option value="High-Wizard">High Wizard</option>
+                                    <option value="Creator">Creator</option>
+                                    <option value="Stalker">Stalker</option>
+                                    <option value="Sniper">Sniper</option>
+                                    <option value="Gypsy">Gypsy</option>
+                                    <option value="High-Priest">High Priest</option>
+                                    <option value="Soul-Linker">Soul Linker</option>
+                                    <option value="Clown">Clown</option>
+                                    <option value="Prof">Prof</option>
+                                    <option value="Paladin">Paladin</option>
+                                    <option value="Lord-Knight">Lord Knight</option>
+                                    <option value="Assassin-Cross">Assassin Cross</option>
+                                    <option value="Whitesmith">Whitesmith</option>
+                                    <option value="Gunslinger">Gunslinger</option>
+                                    <option value="Ninja">Ninja</option>
+                                    <option value="Taekwon">Taekwon Boy</option>
+                                    <option value="Super-Novice">Super Novice</option>
+                                </select>
+                            </div>
+                        </form>
+                        <br>
+                        <form name="Role" id="Role">
+                            <div class="select is-medium">
+                                <select id="selectRole" disabled>
+                                    <option value="none" disabled="disabled" selected="selected">Selectionnez d'abord une Classe</option>
+                                </select>
+                            </div>
+                        </form>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="column has-text-centered">
+                <p class="title is-size-4-mobile title-ubuntu"><i class="icofont icofont-verification-check has-text-success" id="Stage3"></i>Etape 3</p>
+                <p class="subtitle is-size-5-mobile">Precisez si celui ci beneficie de protections ou d'un role secondaire</p>
+                <form name="Lead" id="Lead">
+                    <div class="select is-medium">
+                        <select id="selectLeader" disabled>
+                            <option value="none" disabled="disabled" selected="selected">Team-Leader </option>
+                            <option value="">Non</option>
+                            <option value="Team Leader">Oui</option>
+                        </select>
+                    </div>
+                </form>
+                <br>
+                <form name="UnderDevo" id="UnderDevo">
+                    <div class="select is-medium">
+                        <select id="selectUnderDevo" disabled>
+                            <option value="none" disabled="disabled" selected="selected">Protegé par Devotion</option>
+                            <option value="">Non</option>
+                            <option value="A Devo">Oui</option>
+                        </select>
+                    </div>
+                </form>
+                <br>
+                <form name="FCP" id="FCP">
+                    <div class="select is-medium">
+                        <select id="selectFCP" disabled>
+                            <option value="none" disabled="disabled" selected="selected">Responsable du FCP</option>
+                            <option value="">Non</option>
+                            <option value="FCP">Oui</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="columns">
+            <div class="column has-text-centered">
+                <p class="title is-size-4-mobile title-ubuntu"><i class="icofont icofont-verification-check has-text-success" id="Stage4"></i>Etape 4</p>
+                <p class="subtitle is-size-5-mobile">Personne n'est anonyme, le pseudo est donc d'importance capitale</p>
+                <div class="columns is-centered ">
+                    <div class="column is-two-thirds">
+                        <form name="Pseudo" id="Pseudo">
+                            <input class="input is-medium" type="text" placeholder="Pseudo du joueur" id="champPseudo" disabled>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column has-text-centered">
+                <p class="title is-size-4-mobile title-ubuntu"><i class="icofont icofont-verification-check has-text-success" id="Stage5"></i><i class="icofont icofont-error has-text-danger" id="Stage5bis"></i>Etape 5</p>
+                <p class="subtitle is-size-5-mobile">Pour encore plus de precisions...</p>
+                <div class="columns is-centered">
+                    <div class="column is-two-thirds">
+                        <form name="Comment" id="Comment">
+                            <input class="input is-medium" type="text" placeholder="Retards ou autres..." id="champCom" disabled>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="column has-text-centered">
+                <p class="title is-size-4-mobile title-ubuntu"><i class="icofont icofont-verification-check has-text-success" id="Stage6"></i>Etape 6</p>
+                <p class="subtitle is-size-5-mobile">Le guildien a confirmé ou a decidé de laisser ses amis dans le doute...</p>
+                <div class="columns is-centered">
+                    <div class="column">
+                        <form name="Confirm" id="Confirm">
+                            <div class="select is-medium">
+                                <select id="selectConfirm" disabled>
+                                    <option value="none" disabled="disabled" selected="selected">Selectionnez</option>
+                                    <option value="Present">Présent</option>
+                                    <option value="Absent">Absent</option>
+                                    <option value="Non Confirmé">A confirmer</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="content">
+                <div class="columns is-mobile">
+                    <div class="column has-text-left">
+                        <a class="button is-facebook is-medium has-text-white" Value="Button" id="TabAdd" disabled><i class="icofont icofont-plus"></i>Ajouter aux tableaux</a>
+
+                    </div>
+
+                    <div class="column has-text-centered">
+                        <p class="subtitle is-size-5-mobile">Flabby Owl - 2018</p>
+
+                    </div>
+
+                    <div class="column has-text-right">
+                        <a class="button is-facebook is-medium has-text-white" id="rosterPrint">Imprimer le Roster<i class="icofont icofont-verification-check"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+    </section>
+
+    <!--Section des tableaux de groupe-->
+
+    <section id="RosterTab">
+
+        <div class="container has-text-centered">
+            <img src="img/1.png">
+            <table class="table is-bordered is-striped is-fullwidth" id="TabGroupA">
+                <thead>
+                    <tr>
+                        <th>Classe</th>
+                        <th>Precisions</th>
+                        <th>Pseudo</th>
+                        <th>Commentaires</th>
+                        <th>Confirmation</th>
+                    </tr>
+                </thead>
+
+            </table>
+
+            <img src="img/2.png">
+            <table class="table is-bordered is-striped is-fullwidth" id="TabGroupB">
+                <thead>
+                    <tr>
+                        <th>Classe</th>
+                        <th>Precisions</th>
+                        <th>Pseudo</th>
+                        <th>Commentaires</th>
+                        <th>Confirmation</th>
+                    </tr>
+                </thead>
+
+            </table>
+
+            <img src="img/3.png">
+            <table class="table is-bordered is-striped is-fullwidth" id="TabGroupC">
+                <thead>
+                    <tr>
+                        <th>Classe</th>
+                        <th>Precisions</th>
+                        <th>Pseudo</th>
+                        <th>Commentaires</th>
+                        <th>Confirmation</th>
+                    </tr>
+                </thead>
+
+            </table>
+
+            <img src="img/4.png">
+            <table class="table is-bordered is-striped is-fullwidth" id="TabGroupD">
+                <thead>
+                    <tr>
+                        <th>Classe</th>
+                        <th>Precisions</th>
+                        <th>Pseudo</th>
+                        <th>Commentaires</th>
+                        <th>Confirmation</th>
+                    </tr>
+                </thead>
+
+            </table>
+        </div>
+    </section>
+
+
+    <script type="text/javascript" language="javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" language="javascript" src="./js/functions.js"></script>
+    <script type="text/javascript" language="javascript" src="./js/tabcreator.js"></script>
+    <script type="text/javascript" language="javascript" src="./js/quietly.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+<option value="" disabled="disabled" selected="selected">Selectionnez un Role</option>
+<option value="Song">Song</option>
+<option value="Duet">Duet</option>
+<option value="Tarot">Tarot</option>
+<option value="Frost Joke">Frost-Joke</option>

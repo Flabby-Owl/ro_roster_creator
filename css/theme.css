@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu.ttf');
+}
+@font-face {
+    font-family: 'Felbridge';
+    src: url('../fonts/Felbridge.otf');
+}
+
+select {
+    width: 20em;
+}
+.has-facebook-icon-color {
+    color: #1A2947;
+}
+.title-ubuntu {
+    font-family: 'Ubuntu', Arial, serif;
+}
+p,
+tr,
+th,
+td {
+    font-family: 'Felbridge', Arial, serif;
+}

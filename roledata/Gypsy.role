@@ -1,0 +1,6 @@
+<option value="" disabled="disabled" selected="selected">Selectionnez un Role</option>
+<option value="Dance">Dance</option>
+<option value="Duet">Duet</option>
+<option value="Tarot">Tarot</option>
+<option value="Slow Grace">Slow Grace</option>
+<option value="Scream">Scream</option>
